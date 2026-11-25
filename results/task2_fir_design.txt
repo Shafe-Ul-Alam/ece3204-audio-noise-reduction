@@ -1,0 +1,13 @@
+Required taps from N = c*fs/df (Li Tan) for transition width df = 150 Hz:
+   rectangular  N = 97
+   hanning      N = 331
+   hamming      N = 353
+   blackman     N = 587
+Used: N = 257 taps for every window (equal cost, fair comparison).
+The lower edge (150 Hz) is close to 0 Hz, so the lower transition band
+is the hardest constraint for the wide-main-lobe windows.
+
+Check vs built-in fir1 (Hamming): max pass-band difference = 0.0054 dB,
+max coefficient difference = 2.81e-04
+(fir1 additionally scales the coefficients for exactly 0 dB at the pass-band centre)
+

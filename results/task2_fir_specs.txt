@@ -1,0 +1,8 @@
+Filter              Order PassDev(dB)  StopAtt(dB)   @50Hz(dB)  Transition(Hz)  Mult/samp
+FIR-Rectangular       256       0.681         41.5        34.3              64        257
+FIR-Hanning           256       0.038         90.2        45.7             153        257
+FIR-Hamming           256       0.034         63.8        49.8             148        257
+FIR-Blackman          256       0.016         99.5        28.4             197        257
+
+Values are for a single pass. The system filters forward and backward
+(zero phase), so effective attenuation in dB is doubled.

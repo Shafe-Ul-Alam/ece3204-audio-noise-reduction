@@ -1,0 +1,17 @@
+White-noise test (true PSD = -39.03 dB/Hz)
+Estimator                      Segments Resolution(Hz)   Std dev (dB)
+Periodogram                           1           0.13           5.55
+Welch, segment 128                 1967         170.00           0.11
+Welch, segment 512                  491          42.50           0.21
+Welch, segment 2048                 122          10.62           0.42
+
+Resolution of Welch with a Hamming window ~ 1.36 fs / L (main-lobe 3 dB width).
+
+AR (parametric) PSD of the mixed-noise signal
+Method          Order    Pred. error var
+yule               12          1.106e-03
+burg               12          1.106e-03
+yule               40          1.033e-03
+burg               40          1.032e-03
+
+Check vs toolbox (median dB difference): periodogram 0.000, pwelch 0.000, pburg 0.000

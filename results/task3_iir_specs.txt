@@ -1,0 +1,14 @@
+Filter              Order PassDev(dB)  StopAtt(dB)   @50Hz(dB)  Transition(Hz)  Mult/samp
+IIR-Butterworth        12       0.848         15.3        59.0            2043         30
+IIR-Chebyshev1         12       1.000         29.8        81.8            1034         30
+IIR-Elliptic           12       1.000         57.7        63.9             533         30
+
+Values are for a single pass. The system filters forward and backward
+(zero phase), so effective attenuation in dB is doubled.
+
+Analog-to-digital mapping (Butterworth, prototype order 4)
+  upper -3 dB edge, analog prototype      :   3799 Hz
+  bilinear with pre-warping              :   3799 Hz
+  bilinear without pre-warping           :   3263 Hz (frequency warping)
+  impulse invariance                     :   3781 Hz, attenuation at fs/2 = 30.5 dB (aliasing)
+  max |coef diff| bilinear vs butter()   : 2.31e-14 (MATLAB designs digital IIR this way)

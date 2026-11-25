@@ -1,0 +1,10 @@
+
+================ SUMMARY ================
+white  : noisy LSD = 27.94 dB
+white  : best SNR gain = Wavelet-db4          (6.71 dB) | least distortion = Wavelet-db4          (12.26 dB) | best balance = Wavelet-db4
+hum    : noisy LSD = 5.66 dB
+hum    : best SNR gain = Adaptive-NLMS        (13.28 dB) | least distortion = Adaptive-NLMS        (0.82 dB) | best balance = Adaptive-NLMS
+hiss   : noisy LSD = 26.95 dB
+hiss   : best SNR gain = IIR-Butterworth      (9.66 dB) | least distortion = IIR-Butterworth      (6.24 dB) | best balance = IIR-Butterworth
+mixed  : noisy LSD = 29.07 dB
+mixed  : best SNR gain = IIR-Butterworth      (7.11 dB) | least distortion = Wavelet-db4          (9.05 dB) | best balance = IIR-Butterworth
